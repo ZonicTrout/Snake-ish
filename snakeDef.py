@@ -86,13 +86,13 @@ class Apple:
         height = h
         width = w
         color = RGB
-        randCoords = (random.randint(0, gameself.Borders[0]), random.randint(0, gameself.Borders[1]))
+        randCoords = (random.randint(20, gameself.Borders[0]-20), random.randint(20, gameself.Borders[1]-20))
 
     #   The Eaten function adds to points and re-rolls coordinates
 
     def Eaten(self, gameself):
         gameself.points += 1
-        self.randCoords = (random.randint(0, gameself.Borders[0]), random.randint(0, gameself.Borders[1]))
+        self.randCoords = (random.randint(20, gameself.Borders[0]-20), random.randint(20, gameself.Borders[1]-20))
 
 def withinRange(inp, benchmark, closeness = 10):
     if (inp[0] <= benchmark[0] + closeness and inp[0] >= benchmark[0] - closeness):
