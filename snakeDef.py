@@ -137,13 +137,6 @@ class Apple:
         gameself.points += 1
         self.randCoords = (random.randint(20, gameself.Borders[0]-20), random.randint(20, gameself.Borders[1]-20))
 
-class Server:
-    """Deals with flask Server"""
-
-    test = None
-    def runServer() -> None:
-        """Using the import keyword, imports and runs the server.py file"""
-        import server
 
 # Checks if within range
 
